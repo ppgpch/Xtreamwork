@@ -1,0 +1,68 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "0.1.0",
+  "FriendlyName": "Xtreamwork - AI-Powered Game Assistant",
+  "Description": "Complete AI-assisted development platform for Survival/Action-RPG games. Integrated game systems (Inventory, Combat, Movement, Health, Stamina, Crafting, Quests, NPC AI) with Monolith MCP optimization and Headroom token compression for ultra-efficient code generation.",
+  "Category": "AI Tools",
+  "CreatedBy": "ppgpch",
+  "CreatedByURL": "https://github.com/ppgpch/Xtreamwork",
+  "DocsURL": "https://github.com/ppgpch/Xtreamwork/wiki",
+  "MarketplaceURL": "",
+  "SupportURL": "https://github.com/ppgpch/Xtreamwork/issues",
+  "EngineVersion": "5.8.0",
+  "CanContainContent": true,
+  "Installed": false,
+  "Modules": [
+    {
+      "Name": "XtreamworkCore",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "PlatformAllowList": [
+        "Win64",
+        "Mac",
+        "Linux"
+      ]
+    },
+    {
+      "Name": "XtreamworkGameSystems",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "PlatformAllowList": [
+        "Win64",
+        "Mac",
+        "Linux"
+      ]
+    },
+    {
+      "Name": "XtreamworkMCP",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "PlatformAllowList": [
+        "Win64",
+        "Mac",
+        "Linux"
+      ]
+    },
+    {
+      "Name": "XtreamworkEditor",
+      "Type": "Editor",
+      "LoadingPhase": "PostEngineInit",
+      "PlatformAllowList": [
+        "Win64",
+        "Mac",
+        "Linux"
+      ]
+    },
+    {
+      "Name": "XtreamworkHeadroom",
+      "Type": "Runtime",
+      "LoadingPhase": "Default",
+      "PlatformAllowList": [
+        "Win64",
+        "Mac",
+        "Linux"
+      ]
+    }
+  ]
+}
