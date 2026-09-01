@@ -1,0 +1,70 @@
+{
+  "mcpServers": {
+    "xtreamwork": {
+      "command": "Plugins/Xtreamwork/Binaries/xtreamwork_proxy.exe",
+      "args": [
+        "--headroom-enabled",
+        "--monolith-filter=optimized",
+        "--compression-level=high",
+        "--ccr-enabled",
+        "--cache-ttl=3600"
+      ],
+      "env": {
+        "XTREAMWORK_HEADROOM_LEVEL": "aggressive",
+        "XTREAMWORK_LIVE_ZONE": "true",
+        "XTREAMWORK_SMART_ROUTING": "true",
+        "XTREAMWORK_SESSION_DEDUP": "true",
+        "HEADROOM_OUTPUT_SHAPER": "1",
+        "MONOLITH_CALL_LOG": "1"
+      }
+    }
+  },
+  "xtreamwork": {
+    "version": "0.1.0",
+    "optimization": {
+      "headroom": {
+        "enabled": true,
+        "compression_level": "high",
+        "json_reduction_target": "90%",
+        "live_zone": true,
+        "ccr_reversible": true,
+        "cache_ttl_seconds": 3600
+      },
+      "monolith": {
+        "filter_mode": "optimized",
+        "curated_actions": 200,
+        "excluded_namespaces": [
+          "niagara_advanced",
+          "marketplace",
+          "deprecated"
+        ],
+        "included_namespaces": [
+          "blueprint",
+          "material",
+          "animation",
+          "source",
+          "gameplay_ability",
+          "custom_game_systems"
+        ]
+      },
+      "session_management": {
+        "multi_client_support": true,
+        "smart_caching": true,
+        "deduplication": true,
+        "context_cleanup": true
+      }
+    },
+    "game_systems": {
+      "inventory": true,
+      "combat": true,
+      "character_movement": true,
+      "health": true,
+      "stamina": true,
+      "crafting": true,
+      "quest": true,
+      "loot": true,
+      "npc_ai": true,
+      "world_interaction": true
+    }
+  }
+}
